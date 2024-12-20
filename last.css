@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+.header {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.left-nav,
+.right-nav {
+    display: flex;
+    gap: 20px;
+}
+  
+.neon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+}
+  
+.bigp {
+    text-align: center;
+    padding: 50px 20px;
+}
+  
+.bigp h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+  
+.bigp img {
+    width: 100%;
+    height: auto;
+}
+  
+.pft {
+    padding: 50px 20px;
+    text-align: center;
+}
+  
+.pft h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    text-align: center;
+}
+  
+.pft .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+  
+.pft .project {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+  
+.pft .project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.pft .project h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+  
+.pft .project p {
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+}
+
+.ts {
+    padding: 40px 20px;
+    text-align: center;
+}
+  
+.ts h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+  
+.ts-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.t-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: left;
+    border: 1px solid black;
+    flex: 0 0 auto;
+    width: 300px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+  
+.t-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+  
+.t-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+  
+.t-info {
+    display: flex;
+    flex-direction: column;
+}
+  
+.t-name {
+    font-size: 1rem;
+    margin: 0;
+}
+  
+.t-role {
+    font-size: 0.9rem;
+    margin: 0;
+    
+}
+  
+.t-comment {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 10px; 
+}
+  
+.vertical-line {
+    width: 1px; 
+    height: 48px; 
+    background-color: #000; 
+    margin: 10px 0 0 30px;
+    position: relative;
+    align-self: start;
+}
+  
+.t-comment span {
+    font-size: 1rem;
+    color: #333333;
+    line-height: 1.5;
+    display: inline-block; 
+}
+  
+.divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    margin: 48px 0;
+}
+
+  
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+  
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+  
+footer button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+footer button:hover {
+    background-color: #f0f0f0;
+}
+  
+@media (max-width: 1024px) {
+    .pft .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .ts-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+  
+    .t-card {
+        width: 250px;
+    }
+  
+    .bigp h1 {
+        font-size: 4rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .left-nav,
+    .right-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+  
+    .pft .grid {
+        grid-template-columns: 1fr;
+    }
+  
+    .ts-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+  
+    .t-card {
+        width: 200px;
+    }
+  
+    .bigp h1 {
+        font-size: 3rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+  
+    .bigp h1 {
+        font-size: 2.5rem;
+    }
+  
+    .bigp img {
+        width: 100%;
+    }
+  
+    .pft .grid,
+    .ts-grid {
+        grid-template-columns: 1fr;
+    }
+  
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    footer button {
+        margin-top: 10px;
+    }
+}
